@@ -1,2 +1,3 @@
 # WP-Snippets
-Snippets for Wordpress Block Editor
+
+Collection of Snippets for Wordpress Block Editor
