@@ -1,0 +1,33 @@
+/* Style Mobile Navigation WP2025 */
+
+/* Add background color to overlay */
+:root.has-modal-open {
+  --wp--preset--color--base: lightblue;
+}
+
+/* Adjust submenu container styling */
+.wp-block-navigation__responsive-container.is-menu-open
+  .wp-block-navigation__responsive-container-content
+  .has-child
+  .wp-block-navigation__submenu-container {
+  border: none;
+  height: auto;
+  min-width: 200px;
+  opacity: 1;
+  overflow: initial;
+  padding-left: 2rem;
+  position: static;
+  visibility: visible;
+  width: auto;
+  text-align: right;
+  font-size: 0.875rem;
+}
+
+/* Add arrow icon to submenu items */
+.wp-block-navigation__responsive-container.is-menu-open
+  .wp-block-navigation__responsive-container-content
+  .wp-block-navigation__submenu-container
+  a::after {
+  content: "«";
+  margin-left: 0.25em;
+}
