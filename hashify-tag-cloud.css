@@ -1,0 +1,5 @@
+/* Add Hash to tag cloud  */
+a[class^="tag-cloud-link"]::before {
+  content: "#";
+  font-weight: bold;
+}
