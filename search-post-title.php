@@ -1,5 +1,5 @@
 <?php
-// Limit the search to post title only
+// Limit all search to post title
 add_filter( 'post_search_columns', function( $columns ) {
 return [ 'post_title' ];
 } );
