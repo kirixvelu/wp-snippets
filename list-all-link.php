@@ -1,5 +1,5 @@
 <?php
-// List All URLs / Kiri Vadivelu / 2026
+// List All Link
 add_action('admin_menu', 'add_url_list_page');
 function add_url_list_page() {
     add_management_page('All URLs', 'All URLs', 'manage_options', 'all-urls', 'display_all_urls');
