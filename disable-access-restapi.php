@@ -1,5 +1,5 @@
 <?php
-// Disable Insecure RestAPI
+// Disable Access RestAPI
 add_filter( 'rest_endpoints', function( $endpoints ) {
     if ( ! is_user_logged_in() ) {
         if ( isset( $endpoints['/wp/v2/users'] ) ) {

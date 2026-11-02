@@ -1,5 +1,5 @@
 <?php
-// Limit RestAPI Access
+// Limit Access RestAPI
 add_filter( 'rest_authentication_errors', function( $result ) {
     if ( true === $result || is_wp_error( $result ) ) {
         return $result;
