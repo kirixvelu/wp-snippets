@@ -1,5 +1,5 @@
 <?php
-// Limit upload size
+// Limit file size
 function max_upload_size( $file ) {
     $max = 9 * 1024 * 1024; // 9 MB
     if ( $file['size'] > $max ) {

@@ -1,5 +1,5 @@
 <?php
-// Limit image size
+// Limit image width
 add_filter('wp_handle_upload_prefilter', 'image_max_pixel');
 function image_max_pixel($file) {
     $image = getimagesize($file['tmp_name']);
