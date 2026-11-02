@@ -1,0 +1,8 @@
+/* Short Breadcrumb Title */
+.wp-block-breadcrumbs ol li:last-child {
+  max-width: 175px; /* Set desired limit */
+  white-space: nowrap; /* Prevents line breaks */
+  overflow: hidden; /* Hides text exceeding width */
+  text-overflow: ellipsis; /* Adds the "..." dots */
+  display: inline-block;
+}
