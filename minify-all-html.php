@@ -1,5 +1,5 @@
 <?php
-// Minify WP HTML
+// Minify All HTML
 add_action('template_redirect', 'wp_html_minify_start');
 
 function wp_html_minify_start() {
