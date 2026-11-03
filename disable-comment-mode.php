@@ -1,5 +1,5 @@
 <?php
-// Disable Comment Module
+// Disable Comment Mode
 add_action('admin_init', function () {
     // Redirect any user trying to access comments page
     global $pagenow;

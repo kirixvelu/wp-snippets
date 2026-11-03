@@ -1,5 +1,5 @@
 <?php
-// Active Jetpack Module
+// Active Jetpack Mode
 add_filter( 'jetpack_active_modules', 'custom_jetpack_active_modules' );
 function custom_jetpack_active_modules( $active ) {
     // Only these modules will be active

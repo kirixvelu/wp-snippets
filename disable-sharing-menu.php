@@ -1,5 +1,5 @@
 <?php
-// Disable Sharing Submenu
+// Disable Sharing Menu
 // Remove Sharing from Settings submenu
 add_action('admin_menu', function () {
     remove_submenu_page('options-general.php', 'sharing');

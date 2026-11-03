@@ -1,5 +1,5 @@
 <?php
-// Block Outbound API
+// Block Outbound HTTP
 add_filter( 'pre_http_request', 'dwp_pre_http_request_block', 10, 3 );
 function dwp_pre_http_request_block( $preempt, $args, $url ) {
 
