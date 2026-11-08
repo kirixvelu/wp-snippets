@@ -14,5 +14,4 @@ add_filter( 'language_attributes', function() {
 add_filter( 'auto_update_translation', '__return_false' );
 add_filter( 'async_update_translation', '__return_false' );   
 
-// Disable Login Screen Language Switcher
-add_filter( 'login_display_language_dropdown', '__return_false' );   
+  

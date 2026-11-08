@@ -35,4 +35,7 @@ function remove_wp_login_logo() {
 add_filter('login_headerurl', '__return_false');
 add_filter('login_headertext', function() { return ''; });
 }
-add_action('login_enqueue_scripts', 'remove_wp_login_logo');   
+add_action('login_enqueue_scripts', 'remove_wp_login_logo');  
+
+// Disable Login Screen Language Switcher
+add_filter( 'login_display_language_dropdown', '__return_false' ); 
