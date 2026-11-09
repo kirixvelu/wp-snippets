@@ -9,3 +9,6 @@ define( 'WP_POST_REVISIONS', 5 );
 
 // Disable all ai features
 define( 'WP_AI_SUPPORT', false ); 
+
+// Reduce Garbage Retention
+define( 'EMPTY_TRASH_DAYS', 7 );   
