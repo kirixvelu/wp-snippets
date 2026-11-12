@@ -1,6 +1,5 @@
 <?php
 // SEO Meta Description / Kiri Vadivelu / 2026
-// SEO Meta Desc / Kiri Vadivelu / 2025
 function seo_meta_desc() {
     if (is_singular()) {
         global $post;
