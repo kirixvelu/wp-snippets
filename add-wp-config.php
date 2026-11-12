@@ -12,3 +12,12 @@ define( 'WP_AI_SUPPORT', false );
 
 // Reduce Garbage Retention
 define( 'EMPTY_TRASH_DAYS', 7 );   
+
+// Force SSL
+define('FORCE_SSL_ADMIN', true);
+
+/* Force SSL & Override SSL */
+define('FORCE_SSL_ADMIN', true);
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+   $_SERVER['HTTPS']='on';
+   
