@@ -1,5 +1,6 @@
 <?php
 // Minimal login form
+
 // Hide Login Errors 
 add_filter(
 	'login_errors',
@@ -20,22 +21,25 @@ function remove_login_links() {
     // Lost Password
 }   
 
-// Hide WP Logo, Remove Links and Style Form
-function remove_wp_login_logo() {
-    echo '<style>
-        .login h1 a, .forgetmenot { 
-            display: none !important; 
-        }
-        .login form {
-        border: 0 !important;
-        border-radius: 20px;
-        }
-    </style>';
-    
-add_filter('login_headerurl', '__return_false');
-add_filter('login_headertext', function() { return ''; });
-}
-add_action('login_enqueue_scripts', 'remove_wp_login_logo');  
+// Link Homepage
+add_filter( 'login_headerurl', function() { return home_url(); } );
+add_filter( 'login_headertext', function() { return get_bloginfo( 'name' ); } ); 
 
-// Disable Login Screen Language Switcher
+// Add Site Logo
+function site_login_logo() { ?>
+    <style type="text/css">
+        .login .wp-login-logo a,
+        #login h1 a {
+            background-image: url('') !important;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            overflow: hidden;
+            display: block;
+        }
+    </style>
+<?php }
+add_action( 'login_head', 'site_login_logo' );  
+
+// Disable Language Switcher
 add_filter( 'login_display_language_dropdown', '__return_false' ); 
