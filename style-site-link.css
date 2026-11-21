@@ -1,0 +1,25 @@
+/* Style Site Link / Kiri Vadivelu / 2026 */
+a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em; /* Adjust value */
+  text-decoration-thickness: 0.1em !important;
+}
+
+/* Style paragraph links */
+p a {
+  text-underline-offset: 0.175em;
+  text-decoration-thickness: 0.1em !important;
+}
+
+/* Remove underline for nav/buttons */
+nav a,
+.button {
+  text-decoration: none;
+}
+
+nav a:hover,
+.button:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.275em;
+  text-decoration-thickness: 0.15em !important;
+}
