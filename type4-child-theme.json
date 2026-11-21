@@ -1,0 +1,54 @@
+{
+  "version": 3,
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "System Serif",
+          "slug": "system-serif",
+          "fontFamily": "ui-serif, Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif"
+        },
+        {
+          "name": "System Sans",
+          "slug": "system-sans",
+          "fontFamily": "system-ui, -apple-system, 'Segoe UI Variable', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+        },
+        {
+          "name": "System Mono",
+          "slug": "system-mono",
+          "fontFamily": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--system-serif)",
+      "fontSize": "var(--wp--preset--font-size--medium)"
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--system-sans)"
+        }
+      }
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--system-sans)"
+        }
+      },
+      "button": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--system-serif)"
+        }
+      },
+      "caption": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--system-mono)"
+        }
+      }
+    }
+  }
+}
