@@ -1,10 +1,5 @@
 {
-  "_author": "Kiri Vadivelu",
-  "_organization": "Digital Designers CA",
-  "_country": "Canada",
-  "_credit": "WordPress Org",
-  "_Requirement": "Twenty Twenty Five Block Theme",
-  "version": 5,
+  "version": 3,
   "settings": {
     "typography": {
       "fontFamilies": [
