@@ -1,4 +1,4 @@
-// snippet for browser console to display computed font sizes for all heading on current page. Source: https://brndle.com/fluid-typography-spacing-theme-json/
+// For browser console to display computed font sizes for all heading on current page. Source: https://brndle.com/fluid-typography-spacing-theme-json/
 document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach((el) => {
   const computed = window.getComputedStyle(el);
   console.log(
