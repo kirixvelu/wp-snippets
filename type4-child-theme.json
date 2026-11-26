@@ -39,11 +39,6 @@
           "fontFamily": "var(--wp--preset--font-family--system-sans)"
         }
       },
-      "button": {
-        "typography": {
-          "fontFamily": "var(--wp--preset--font-family--system-serif)"
-        }
-      },
       "caption": {
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--system-mono)"
